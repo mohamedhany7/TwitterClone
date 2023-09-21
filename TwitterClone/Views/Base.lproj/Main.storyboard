@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aAr-rv-616">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="h1e-IU-wjM">
+            <objects>
+                <viewController id="Wsa-lf-Bla" customClass="HomeViewController" customModule="TwitterClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bdq-ih-C96">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Zpz-Ur-1Me">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xGi-NR-6zF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="house" catalog="system" selectedImage="house.fill" id="iTc-CM-vyO"/>
+                    <navigationItem key="navigationItem" id="LYg-Vh-1V9"/>
+                    <connections>
+                        <outlet property="tableView" destination="Zpz-Ur-1Me" id="zrI-Bg-J0x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2fg-MR-dmk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="348.85496183206106" y="769.71830985915494"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="byB-nu-SzX">
+            <objects>
+                <viewController id="ggI-8K-k4x" customClass="SearchViewController" customModule="TwitterClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KhA-HC-E2F">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dnU-kO-tPo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="magnifyingglass" catalog="system" selectedImage="magnifyingglass" id="cDP-gD-G8E"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="USX-QU-AdC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1063" y="770"/>
+        </scene>
+        <!--Notifications View Controller-->
+        <scene sceneID="pra-4Y-GDh">
+            <objects>
+                <viewController id="DPj-kX-KeF" customClass="NotificationsViewController" customModule="TwitterClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N3I-Cg-AHZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="CQu-5D-HII"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="bell" catalog="system" badgeValue="5" selectedImage="bell.fill" id="rd0-gD-yo8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nUR-7Y-Upb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1825" y="770"/>
+        </scene>
+        <!--Direct Messages View Controller-->
+        <scene sceneID="gN7-t6-fUR">
+            <objects>
+                <viewController id="g3L-CY-VTU" customClass="DirectMessagesViewController" customModule="TwitterClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kNe-P1-gRQ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="DsB-AX-tuZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="envelope" catalog="system" badgeValue="2" selectedImage="envelope.fill" id="7vL-HP-Gpo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XOL-5U-2gI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2627" y="770"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Kea-Xy-WGb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aAr-rv-616" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Glg-Fc-0Y2">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="927-Tm-qyR" kind="relationship" relationship="rootViewController" id="Mxe-d8-dsh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CHZ-f0-pGU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="560" y="35"/>
+        </scene>
+        <!--Main Tab Bar Controller-->
+        <scene sceneID="xNl-E3-RPV">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="927-Tm-qyR" customClass="MainTabBarController" customModule="TwitterClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="zwX-Ok-OI1"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6Kq-BU-ehw">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Wsa-lf-Bla" kind="relationship" relationship="viewControllers" id="9xY-EO-Bya"/>
+                        <segue destination="ggI-8K-k4x" kind="relationship" relationship="viewControllers" id="viU-h7-oGP"/>
+                        <segue destination="DPj-kX-KeF" kind="relationship" relationship="viewControllers" id="7nP-J2-I19"/>
+                        <segue destination="g3L-CY-VTU" kind="relationship" relationship="viewControllers" id="fpr-Ny-aG2"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lJX-MI-71T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1387" y="35"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bell" catalog="system" width="125" height="128"/>
+        <image name="bell.fill" catalog="system" width="123" height="128"/>
+        <image name="envelope" catalog="system" width="128" height="93"/>
+        <image name="envelope.fill" catalog="system" width="128" height="93"/>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
