@@ -106,12 +106,20 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="927-Tm-qyR" customClass="MainTabBarController" customModule="TwitterClone" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="zwX-Ok-OI1"/>
+                    <navigationItem key="navigationItem" id="zwX-Ok-OI1">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="person.fill" catalog="system" id="JHL-R3-ZMw">
+                            <connections>
+                                <action selector="didSelectProfileButton:" destination="927-Tm-qyR" id="WVa-3a-mj6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6Kq-BU-ehw">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <outlet property="profileBarButton" destination="JHL-R3-ZMw" id="q3M-vz-ahw"/>
                         <segue destination="Wsa-lf-Bla" kind="relationship" relationship="viewControllers" id="9xY-EO-Bya"/>
                         <segue destination="ggI-8K-k4x" kind="relationship" relationship="viewControllers" id="viU-h7-oGP"/>
                         <segue destination="DPj-kX-KeF" kind="relationship" relationship="viewControllers" id="7nP-J2-I19"/>
@@ -131,6 +139,7 @@
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
